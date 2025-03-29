@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senior Design Project - Elyse Kriegel</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white font-mono text-gray-800">
+    <header>
+        <nav class="w-100 px-8 md:px-auto">
+          <div
+            class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap"
+          >
+            <!-- Logo -->
+            <div class="text-indigo-500 md:order-1">
+              <!-- Heroicon - Chip Outline -->
+              <span>Elyse Kriegel</span>
+
+            </div>
+            <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+              <ul class="flex font-semibold justify-between">
+                <!-- Active Link = text-indigo-500
+                            Inactive Link = hover:text-indigo-500 -->
+                <li class="md:px-4 md:py-2 text-indigo-500">
+                  <a
+                    href="../index.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="works.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Works
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a href="resume.html" class="flex px-6 py-2 hover:text-black">
+                    Resume
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="seniordesign.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Senior Design
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="essay.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Ethics Essay
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="contact.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="container mx-auto px-6 py-12">
+        <h1 class="text-3xl font-bold mb-6 text-indigo-600">Senior Design Project</h1>
+  
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold mb-2">Project Description</h2>
+          <p class="mb-2">
+            Our senior design project, <strong>dripdrop</strong>, is a full-stack social media platform that enables users to share their outfits and monetize their style through affiliate marketing. The platform democratizes fashion influence by allowing users of any following size to earn rewards by posting outfits. AI-generated outfit suggestions and price comparison tools make fashion more accessible and affordable. The system includes a web platform and a cross-platform mobile application, supported by a cloud-based backend infrastructure using Amazon Web Services (AWS).
+          </p>
+          <p>
+            Core features include user authentication, posting, liking, following other users, and receiving AI-generated clothing recommendations with links to more affordable options. The application leverages AWS Lambda, API Gateway, Aurora MySQL, S3 buckets for image storage, and Amazon SageMaker for AI processing. The frontend is built with React and React Native (via Expo), and infrastructure is deployed using the AWS CDK.
+          </p>
+        </section>
+  
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold mb-2">My Role</h2>
+          <p>
+            As one of the primary developers on the project, I was responsible for backend architecture and infrastructure provisioning using the AWS Cloud Development Kit (CDK). I implemented several Lambda functions, managed data interactions with the Aurora MySQL database, and supported frontend integration through well-documented REST API endpoints. I also contributed to the CI/CD pipeline setup and ensured secure IAM role assignments and Secrets Manager configurations. On the frontend, I assisted in building key components for user interaction using React and React Native.
+          </p>
+        </section>
+  
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold mb-2">Skills and Knowledge Gained</h2>
+          <ul class="list-disc list-inside">
+            <li>Full-stack development with React and React Native</li>
+            <li>Designing and deploying cloud infrastructure using AWS CDK</li>
+            <li>Serverless computing and scalable API design using AWS Lambda & API Gateway</li>
+            <li>Database design and optimization with Amazon Aurora (MySQL)</li>
+            <li>Secure storage and delivery of media using AWS S3 and CloudFront</li>
+            <li>Integration of AI/ML services using Amazon SageMaker for clothing recognition and recommendations</li>
+            <li>Agile methodologies, GitLab issue boards, and CI/CD pipelines for continuous integration and testing</li>
+          </ul>
+        </section>
+  
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold mb-2">Supporting Documents</h2>
+          <ul class="list-disc list-inside">
+            <li>
+              <a href="../files/SE 492 Design Document Rough Draft.pdf" class="text-indigo-500 underline" target="_blank">
+                SE 492 Design Document (PDF)
+              </a>
+            </li>
+            <li>
+              <a href="https://sdmay25-25.sd.ece.iastate.edu/" class="text-indigo-500 underline" target="_blank">
+                Official Project Website
+              </a>
+            </li>
+            <li>
+              <a href="https://www.figma.com/board/NaHKgQEzDSHwqSdj0KS3mO/sdmay25-25" class="text-indigo-500 underline" target="_blank">
+                Figma Design and User Flow Board
+              </a>
+            </li>
+          </ul>
+        </section>
+  
+        <section class="mb-10">
+          <h2 class="text-xl font-semibold mb-2">Big Picture Contribution</h2>
+          <p class="mb-2">
+            My work on dripdrop played a key role in ensuring the reliability, scalability, and efficiency of our application infrastructure. I led the setup of AWS CDK stacks, enabling consistent infrastructure deployment and updates across environments. By building secure and modular Lambda functions and optimizing database interactions through RDS Proxy and Secrets Manager, I helped ensure a responsive and secure backend architecture.
+          </p>
+          <p>
+            I also contributed to user-facing functionality by developing API endpoints that supported dynamic content on the frontend. My efforts helped bring AI integration and affiliate functionality to life by enabling communication between the app and external services. In doing so, I not only strengthened the technical foundation of the platform, but also helped drive our mission to make fashion accessibility and social monetization available to everyone.
+          </p>
+        </section>
+      </main>
+  </body>
+</html>

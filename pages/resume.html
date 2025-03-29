@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elyse Kriegel Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      // Simple fade-in on scroll
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(".fade-in");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("opacity-100", "translate-y-0");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+        sections.forEach((section) => {
+          section.classList.add(
+            "opacity-0",
+            "translate-y-8",
+            "transition-all",
+            "duration-700"
+          );
+          observer.observe(section);
+        });
+      });
+    </script>
+  </head>
+  <body class="font-mono bg-white text-gray-800">
+    <main>
+      <header>
+        <nav class="shadow shadow-gray-300 w-100 px-8 md:px-auto">
+          <div
+            class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap"
+          >
+            <div class="text-indigo-500 md:order-1">
+              <span class="text-lg font-bold">Elyse Kriegel</span>
+            </div>
+            <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+              <ul class="flex font-semibold justify-between">
+                <li class="md:px-4 md:py-2 text-indigo-500">
+                  <a
+                    href="../index.html"
+                    class="flex px-6 py-2 hover:text-black"
+                    >Home</a
+                  >
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a href="./works.html" class="flex px-6 py-2 hover:text-black"
+                    >Works</a
+                  >
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="./resume.html"
+                    class="flex px-6 py-2 hover:text-black"
+                    >Resume</a
+                  >
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a href="./essay.html" class="flex px-6 py-2 hover:text-black"
+                    >Ethics Essay</a
+                  >
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="./contact.html"
+                    class="flex px-6 py-2 hover:text-black"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container px-6 py-12 mx-auto space-y-12">
+        <!-- Download Button -->
+        <div class="flex justify-center fade-in">
+          <a
+            href="../files/Elyse Kriegel - Resume.pdf"
+            download
+            class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-lg transition"
+          >
+            📄 Download Resume (PDF)
+          </a>
+        </div>
+
+        <!-- Resume Sections -->
+        <section class="fade-in">
+          <h1 class="text-2xl font-bold mb-2 flex items-center gap-2">
+            <svg
+              class="w-6 h-6 text-indigo-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+            Elyse Kriegel
+          </h1>
+          <p>
+            Email:
+            <a
+              href="mailto:ekriegel@iastate.edu"
+              class="text-indigo-500 underline"
+              >ekriegel@iastate.edu</a
+            >
+            | Phone: 641-629-0648
+          </p>
+          <p>Pella, Iowa 50219</p>
+        </section>
+
+        <section class="fade-in">
+          <h2
+            class="text-xl font-semibold underline mb-2 flex items-center gap-2"
+          >
+            🎯 Objective
+          </h2>
+          <p>
+            To obtain an internship in computer engineering/science starting in
+            summer 2024.
+          </p>
+        </section>
+
+        <section class="fade-in">
+          <h2
+            class="text-xl font-semibold underline mb-2 flex items-center gap-2"
+          >
+            🎓 Education
+          </h2>
+          <p><strong>Iowa State University</strong> – Ames, Iowa</p>
+          <p>B.S. in Computer Engineering – Expected May 2025 | GPA: 3.76</p>
+        </section>
+
+        <section class="fade-in">
+          <h2
+            class="text-xl font-semibold underline mb-2 flex items-center gap-2"
+          >
+            💼 Professional Experience
+          </h2>
+          <!-- State Farm -->
+          <div class="mb-4">
+            <p>
+              <strong>State Farm Mutual Insurance</strong> – Bloomington, IL
+            </p>
+            <p><em>Software Developer Intern</em> | May 2023 – Present</p>
+            <ul class="list-disc ml-6">
+              <li>Worked on AWS to deploy/manage scalable cloud apps.</li>
+              <li>Built a responsive React web app for AWS tenants.</li>
+              <li>Helped implement infrastructure using Terraform.</li>
+              <li>Participated in full SDLC from ideation to maintenance.</li>
+            </ul>
+          </div>
+          <!-- West Bend -->
+          <div class="mb-4">
+            <p><strong>West Bend Mutual Insurance</strong> – West Bend, WI</p>
+            <p><em>Software Developer Intern</em> | Jun 2022 – Mar 2023</p>
+            <ul class="list-disc ml-6">
+              <li>Wrote frontend tests in Playwright for app reliability.</li>
+              <li>Tested APIs in Postman for data/security validation.</li>
+              <li>
+                Built React app to automate policy creation via custom APIs.
+              </li>
+              <li>
+                Managed apps with Microsoft Azure and Agile collaboration.
+              </li>
+            </ul>
+          </div>
+          <!-- ICE Tech -->
+          <div class="mb-4">
+            <p><strong>ICE Technologies</strong> – Pella, IA</p>
+            <p><em>System Engineer Intern</em> | Jul 2020 – Aug 2021</p>
+          </div>
+        </section>
+
+        <section class="fade-in">
+          <h2
+            class="text-xl font-semibold underline mb-2 flex items-center gap-2"
+          >
+            🔬 Research Experience
+          </h2>
+          <p>
+            <strong>Undergraduate Research Mentor Program</strong> – Ames, IA
+          </p>
+          <p><em>Undergraduate Researcher</em> | Jan – May 2022</p>
+          <ul class="list-disc ml-6">
+            <li>Studied linear algebra and applied it to machine learning.</li>
+            <li>Used K-means clustering to group MNIST digits.</li>
+            <li>Used Least Squares to classify handwritten digits.</li>
+          </ul>
+        </section>
+
+        <section class="fade-in">
+          <h2
+            class="text-xl font-semibold underline mb-2 flex items-center gap-2"
+          >
+            🌟 Leadership & Involvement
+          </h2>
+          <ul class="list-disc ml-6">
+            <li>University Honors Program (2021 – Present)</li>
+            <li>GW Carver Program – Multicultural Academic Scholarship</li>
+          </ul>
+        </section>
+
+        <section class="fade-in">
+          <h2
+            class="text-xl font-semibold underline mb-2 flex items-center gap-2"
+          >
+            🛠️ Technical Skills
+          </h2>
+          <p>
+            <strong>Software:</strong> VS Code, React, Git, Office, AWS, Azure,
+            Terraform, Playwright
+          </p>
+          <p>
+            <strong>Languages:</strong> Python, Java, JavaScript/TypeScript,
+            HTML5, CSS, C#
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
