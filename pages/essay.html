@@ -12,212 +12,436 @@
     <main class="relative h-screen font-mono bg-white">
       <header>
         <nav class="w-100 px-8 md:px-auto">
-            <div
-              class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap"
-            >
-              <!-- Logo -->
-              <div class="text-indigo-500 md:order-1">
-                <!-- Heroicon - Chip Outline -->
-                <span>Elyse Kriegel</span>
-
-              </div>
-              <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
-                <ul class="flex font-semibold justify-between">
-                  <!-- Active Link = text-indigo-500
-                              Inactive Link = hover:text-indigo-500 -->
-                  <li class="md:px-4 md:py-2 text-indigo-500">
-                    <a
-                      href="../index.html"
-                      class="flex px-6 py-2 hover:text-black"
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li class="md:px-4 md:py-2 hover:text-indigo-400">
-                    <a
-                      href="./works.html"
-                      class="flex px-6 py-2 hover:text-black"
-                    >
-                      Works
-                    </a>
-                  </li>
-                  <li class="md:px-4 md:py-2 hover:text-indigo-400">
-                    <a href="./resume.html" class="flex px-6 py-2 hover:text-black">
-                      Resume
-                    </a>
-                  </li>
-                  <li class="md:px-4 md:py-2 hover:text-indigo-400">
-                    <a
-                      href="./essay.html"
-                      class="flex px-6 py-2 hover:text-black"
-                    >
-                    Ethics Essay
-                    </a>
-                  </li>
-                  <li class="md:px-4 md:py-2 hover:text-indigo-400">
-                    <a
-                      href="./contact.html"
-                      class="flex px-6 py-2 hover:text-black"
-                    >
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div
+            class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap"
+          >
+            <!-- Logo -->
+            <div class="text-indigo-500 md:order-1">
+              <!-- Heroicon - Chip Outline -->
+              <span>Elyse Kriegel</span>
             </div>
-          </nav>
+            <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+              <ul class="flex font-semibold justify-between">
+                <!-- Active Link = text-indigo-500
+                              Inactive Link = hover:text-indigo-500 -->
+                <li class="md:px-4 md:py-2 text-indigo-500">
+                  <a
+                    href="../index.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="./works.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Works
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="./resume.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Resume
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="./essay.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Ethics Essay
+                  </a>
+                </li>
+                <li class="md:px-4 md:py-2 hover:text-indigo-400">
+                  <a
+                    href="./contact.html"
+                    class="flex px-6 py-2 hover:text-black"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
-      <div class="relative z-20 flex items-center">
+      <div class="relative z-20 flex items-center w-full">
         <div
           class="container max-w-6xl flex flex-col items-center justify-between px-12 pb-4 mx-auto"
         >
-          <div class="pb-4">
-            <h1 class="text-lg font-bold">
-              Ethics in Engineering: A Reflection on Purpose, Decision-Making,
-              and Virtues
+          <!-- Tab Buttons -->
+          <div class="flex space-x-4 pb-6">
+            <button
+              class="tab-button px-4 py-2 font-semibold border-b-2 border-indigo-500"
+              onclick="showEssay('essay1')"
+            >
+              Ethics Essay
+            </button>
+            <button
+              class="tab-button px-4 py-2 font-semibold hover:border-indigo-300"
+              onclick="showEssay('essay2')"
+            >
+              Gen Ed Reflection
+            </button>
+            <button
+              class="tab-button px-4 py-2 font-semibold hover:border-indigo-300"
+              onclick="showEssay('essay3')"
+            >
+              Reflection Essay
+            </button>
+          </div>
+
+          <!-- Essay 1 -->
+          <div id="essay1" class="essay-content">
+            <div class="pb-4">
+              <h1 class="text-lg font-bold">
+                Ethics in Engineering: A Reflection on Purpose, Decision-Making,
+                and Virtues
+              </h1>
+            </div>
+            <div class="pb-4">
+              <p>
+                Ethics is fundamental in engineering, guiding professionals in
+                their actions and decisions. A "Code of Ethics" serves as a
+                moral compass, providing a set of principles and values that
+                engineers should uphold in their practice. This essay will
+                explore the purpose of having and following a Code of Ethics,
+                delve into the personal decision-making process in ethical
+                situations, discuss ethical issues addressed in a class, and
+                reflect on the "Virtue of Ethics" concerning a case study.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p>
+                A "Code of Ethics" in engineering serves multiple crucial
+                purposes. Firstly, it establishes ethical standards, fostering
+                trust and credibility among professionals and the public. It
+                outlines acceptable behavior, ensuring that engineers maintain
+                integrity, professionalism, and accountability. Secondly, it
+                guides engineers when they encounter complex ethical dilemmas by
+                providing a reference point for ethical decision-making. For
+                instance, the IEEE Code of Ethics sets forth principles such as
+                "to hold paramount the safety, health, and welfare of the
+                public" and "to avoid real or perceived conflicts of interest."
+                These principles help engineers navigate challenging situations
+                with clarity.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p>
+                My decision-making process involves several key factors when
+                faced with an ethical situation. Firstly, I assess the situation
+                and identify the ethical dilemma at hand. Next, I consider the
+                potential consequences of various courses of action, both in
+                terms of benefits and harm. Factors such as the impact on family
+                members and friends, societal implications, and legal
+                obligations are considered. Furthermore, I evaluate the
+                principles I have been taught by my parents and other aspects of
+                my life relevant to the situation, seeking guidance from
+                established ethical norms. Additionally, I engage in ethical
+                discussions with friends, family, and co-workers, seeking
+                diverse perspectives to inform my decisions. Ultimately, my
+                decision is based on a balance of these considerations, striving
+                to uphold the highest ethical standards.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p>
+                During our ethics in engineering class, we delved into various
+                topics, including environmental responsibility, safety concerns,
+                professional integrity, and conflicts of interest. We gained
+                valuable insight into the ethical dilemmas engineers may
+                encounter in their professional practice by examining real-world
+                case studies.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p>
+                The ethical considerations introduced in the class were both
+                similar and different from my ethics. They were similar in that
+                they emphasized the importance of safety, public welfare, and
+                integrity, aligning with principles within an established code
+                of ethics (While the class focused on the IEEE Code of Ethics, I
+                used my “own” form of code of ethics). However, the class
+                discussions often introduced nuances and complexities specific
+                to engineering practice, challenging me to think critically
+                about applying ethical principles. While my ethics provided a
+                solid foundation, the class discussions enriched my
+                understanding of the ethical dimensions unique to the
+                engineering profession.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p>
+                In our class, reaching a consensus on the "most ethical"
+                decision could be challenging, as ethical dilemmas often involve
+                multiple perspectives and trade-offs. However, the discussions
+                were invaluable in highlighting the importance of ethical
+                deliberation and the need to consider diverse viewpoints. While
+                consensus was only sometimes achieved, the process of ethical
+                discourse was informative and encouraged critical thinking.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p class="pb-2">
+                In the context of the Grimshaw case, three virtues from the
+                "Virtue of Ethics" stand out as particularly relevant:
+              </p>
+              <ol class="list-decimal px-8">
+                <li>
+                  <strong>Integrity</strong>: Integrity is essential because it
+                  involves being truthful and transparent about product safety
+                  issues. In the Grimshaw case, Ford's lack of transparency
+                  regarding Pinto’s safety concerns was a significant ethical
+                  failing.
+                </li>
+                <li>
+                  <strong>Responsibility:</strong> Responsibility is closely
+                  tied to ensuring the safety of the products engineer’s design
+                  and manufacture. Engineers have a moral obligation to
+                  prioritize public safety over profit, which was a key issue in
+                  the Grimshaw case.
+                </li>
+                <li>
+                  <strong>Honesty:</strong> Honesty is vital in acknowledging
+                  and addressing safety issues honestly, both within the
+                  organization and with the public. Ford's failure to be honest
+                  about Pinto’s safety issues had serious ethical consequences.
+                </li>
+              </ol>
+            </div>
+            <div class="pb-4">
+              <p>
+                In the "Virtue of Ethics," the other virtues are important in
+                different situations, but they are especially relevant to the
+                Grimshaw case because they relate directly to product safety and
+                corporate responsibility. In addition to the ethical virtues
+                mentioned in the "Virtue of Ethics," courage and fairness also
+                apply to this case study. It required courage to stand up for
+                what is just when facing a major corporation, and fairness was
+                crucial in making decisions that didn't overly favor one party
+                while neglecting the rights and interests of others.
+              </p>
+            </div>
+            <div class="pb-4">
+              <p>
+                Engineering professionals navigate a complex landscape of
+                ethical dilemmas. A "Code of Ethics" provides guidance and
+                principles, while personal decision-making processes involve
+                assessing dilemmas, considering consequences, and seeking
+                guidance from established norms. Ethical issues discussed in
+                class enhance our understanding of professional ethics, even as
+                they introduce unique perspectives and complexities. The "Virtue
+                of Ethics" framework offers valuable insights into the virtues
+                that engineers should embody, with integrity, responsibility,
+                and honesty particularly relevant to our case study. Ethical
+                reflection and discourse remain essential for engineers to
+                uphold the highest ethical standards and make responsible
+                decisions that prioritize the well-being of society and the
+                profession.
+              </p>
+            </div>
+          </div>
+
+          <!-- Essay 2 -->
+          <div id="essay2" class="essay-content hidden">
+            <h1 class="text-lg font-bold pb-4">
+              General Education Reflection – Iowa State University
             </h1>
-          </div>
-          <div class="pb-4">
-            <p>
-              Ethics is fundamental in engineering, guiding professionals in
-              their actions and decisions. A "Code of Ethics" serves as a moral
-              compass, providing a set of principles and values that engineers
-              should uphold in their practice. This essay will explore the
-              purpose of having and following a Code of Ethics, delve into the
-              personal decision-making process in ethical situations, discuss
-              ethical issues addressed in a class, and reflect on the "Virtue of
-              Ethics" concerning a case study.
+
+            <p class="pb-4">
+              Throughout my time at Iowa State University, the general education
+              courses I’ve taken have significantly shaped the way I think,
+              communicate, and engage with problems—especially those I may
+              encounter as an engineer. Classes like LIB160, ARCH321, ENGL150,
+              and ENGL250 have broadened my perspective beyond technical
+              knowledge, offering valuable tools for research, communication,
+              and understanding the societal context in which engineering
+              solutions exist.
+            </p>
+
+            <p class="pb-4">
+              <strong>LIB160</strong> was my first step into learning how to
+              access and evaluate credible information—a critical skill in both
+              academic and professional settings. This course taught me how to
+              efficiently use library databases, assess sources for reliability,
+              and cite them appropriately. These research skills are fundamental
+              to solving engineering problems, where backing up technical
+              decisions with reliable data can be crucial. Whether I’m writing a
+              report or validating a proposed design, the ability to locate and
+              assess supporting information ensures my work is thorough and
+              informed.
+            </p>
+
+            <p class="pb-4">
+              In <strong>ARCH321</strong>, the History of the American City, I
+              explored how urban environments have developed and changed over
+              time. This class gave me a better understanding of the social,
+              environmental, and economic factors that influence city planning
+              and infrastructure. By studying the evolution of American cities,
+              I now have a greater appreciation for how engineering
+              decisions—such as building design, transportation systems, and
+              zoning—impact communities long-term. This historical insight is
+              invaluable when thinking about sustainable and inclusive solutions
+              to contemporary issues like climate change and urban sprawl.
+            </p>
+
+            <p class="pb-4">
+              <strong>ENGL150</strong> helped me develop critical thinking and
+              argumentative writing skills. Through essays, peer reviews, and
+              class discussions, I learned how to construct well-reasoned
+              arguments and communicate my ideas clearly. As an engineering
+              student, this has translated directly into how I approach
+              problems: identifying key issues, considering different
+              perspectives, and presenting logical solutions. Strong
+              communication is essential in engineering teams, and ENGL150 laid
+              the groundwork for articulating technical and ethical concerns
+              with clarity.
+            </p>
+
+            <p class="pb-4">
+              Building on that foundation, <strong>ENGL250</strong> focused on
+              technical communication—an area directly aligned with engineering.
+              In this course, I learned how to write formal reports, create
+              professional documents, and adapt language for various audiences.
+              Whether it’s a design proposal or an instruction manual, technical
+              communication is a daily part of engineering practice. ENGL250
+              taught me how to tailor my writing to both technical and
+              non-technical readers, ensuring my ideas are understood by
+              stakeholders at all levels.
+            </p>
+
+            <p class="pb-4">
+              Collectively, these general education courses have not only
+              enriched my education but also equipped me to tackle complex
+              engineering challenges. They’ve helped me think critically,
+              communicate effectively, and consider the broader social and
+              environmental context of the work I’ll do. For example, as climate
+              change continues to affect communities globally, my ability to
+              research solutions, understand historical trends, and communicate
+              designs clearly will be essential in creating sustainable
+              infrastructure.
+            </p>
+
+            <p class="pb-4">
+              In conclusion, general education at Iowa State has provided me
+              with a strong, interdisciplinary foundation that complements my
+              technical training. By integrating research skills, historical
+              awareness, critical thinking, and communication, I am better
+              prepared to face real-world engineering problems with a holistic
+              approach.
             </p>
           </div>
-          <div class="pb-4">
-            <p>
-              A "Code of Ethics" in engineering serves multiple crucial
-              purposes. Firstly, it establishes ethical standards, fostering
-              trust and credibility among professionals and the public. It
-              outlines acceptable behavior, ensuring that engineers maintain
-              integrity, professionalism, and accountability. Secondly, it
-              guides engineers when they encounter complex ethical dilemmas by
-              providing a reference point for ethical decision-making. For
-              instance, the IEEE Code of Ethics sets forth principles such as
-              "to hold paramount the safety, health, and welfare of the public"
-              and "to avoid real or perceived conflicts of interest." These
-              principles help engineers navigate challenging situations with
-              clarity.
+
+          <!-- Essay 3 -->
+          <div id="essay3" class="essay-content hidden">
+            <h1 class="text-lg font-bold pb-4">A Reflective Journey: Navigating My Cumulative Experience at Iowa State</h1>
+          
+            <p class="pb-4">
+              Computer engineering is a field that merges elements of electrical engineering and computer science to design and develop advanced computing technologies. While the technical aspects of hardware and software design stand at the core of this discipline, my journey at Iowa State University has shown me that a broader perspective is essential to becoming a well-rounded engineer. Courses in communication, the arts, and social sciences have deepened my understanding of engineering’s impact on society and prepared me for the multidisciplinary realities of the professional world.
+            </p>
+          
+            <h2 class="text-md font-semibold pb-2 pt-2">Part I: Impact of General Education Courses on Professional Development</h2>
+          
+            <p class="pb-4">
+              <strong>1. Beyond the Technical Aspects of Problem-Solving</strong><br />
+              General Education courses have been instrumental in broadening my perspective and equipping me with versatile skills. ARCH 321: History of the American City offered insight into how economic, cultural, and technological forces shape urban environments. ENGL 150 enhanced my writing and analytical skills, helping me articulate complex ideas logically and concisely.
+            </p>
+          
+            <p class="pb-4">
+              <strong>2. The Role of First-Year Seminars</strong><br />
+              U ST 105 and U ST 106 (Carver Academy Seminars) introduced me to college life and taught valuable soft skills such as teamwork, time management, and leadership. These became crucial in labs and group projects for my computer engineering coursework.
+            </p>
+          
+            <p class="pb-4">
+              <strong>3. Communication in Multiple Contexts</strong><br />
+              ENGL 250H challenged me to communicate using written, oral, visual, and electronic media. Whether presenting microcontroller project data or writing technical reports, I learned to adapt my communication for various audiences—a key skill in the fast-paced world of engineering.
+            </p>
+          
+            <h2 class="text-md font-semibold pb-2 pt-4">Part II: Cumulative Reflection on the Iowa State Experience</h2>
+          
+            <p class="pb-4">
+              <strong>1. Embracing Technical Coursework</strong><br />
+              My CprE classes formed the core of my technical skillset, covering digital logic design, embedded systems, and microprocessor architecture. In these courses, I learned to:
+              <ul class="list-disc list-inside">
+                <li>Design hardware using logic gates, FPGAs, and microcontrollers</li>
+                <li>Develop efficient software in both high- and low-level languages</li>
+                <li>Analyze trade-offs and optimize performance for real-time systems</li>
+              </ul>
+              One standout experience was my senior design project: building a social media apparel app that used AI to recommend similar and cheaper outfits—blending coding, cloud computing, data analysis, and client-facing skills.
+            </p>
+          
+            <p class="pb-4">
+              <strong>2. The Big Picture of Iowa State Preparation</strong><br />
+              My ISU journey taught me to:
+              <ul class="list-disc list-inside">
+                <li>Design with societal impact in mind</li>
+                <li>Consider ethical and cultural dimensions in engineering problems</li>
+                <li>Thrive in collaborative, team-based environments</li>
+                <li>Communicate effectively across technical and non-technical contexts</li>
+                <li>Continuously seek new knowledge and tools</li>
+                <li>Analyze ethical responsibilities like privacy and social impact</li>
+              </ul>
+            </p>
+          
+            <p class="pb-4">
+              <strong>3. Utilizing External Sources of Information</strong><br />
+              For advanced assignments, I used datasheets, developer forums, and scholarly articles to understand cutting-edge technologies. This practice strengthened my ability to stay up-to-date and apply new knowledge professionally.
+            </p>
+          
+            <p class="pb-4">
+              <strong>4. Learning Activities Outside the Classroom</strong><br />
+              <ul class="list-disc list-inside">
+                <li><strong>Hackathons:</strong> Practiced rapid prototyping and teamwork</li>
+                <li><strong>Carver Academy:</strong> Fostered leadership and service</li>
+                <li><strong>Internships:</strong> Applied technical knowledge to real-world problems</li>
+              </ul>
+            </p>
+          
+            <p class="pb-4">
+              <strong>5. Continuous Learning and Skill Development</strong><br />
+              My time at ISU reinforced the need for lifelong learning. Whether through certifications, conferences, or personal projects, I’ve learned to remain agile in a constantly evolving field.
+            </p>
+          
+            <p class="pb-4">
+              <strong>6. If I Could Redo My Undergraduate Experience…</strong><br />
+              <ul class="list-disc list-inside">
+                <li>Explore more interdisciplinary projects with design/business majors</li>
+                <li>Build closer faculty mentorships</li>
+                <li>Seek more global and multicultural exposure</li>
+              </ul>
+            </p>
+          
+            <h2 class="text-md font-semibold pb-2 pt-4">Conclusion</h2>
+          
+            <p class="pb-4">
+              My journey at Iowa State University was more than just technical training. Courses like ARCH 321, ENGL 150, ENGL 250H, and U ST 105/106 gave me a well-rounded foundation. As I move forward, I know that solving engineering problems requires not only logic and code, but empathy, ethics, and the ability to learn constantly. These principles will guide me as I contribute meaningfully to both industry and society.
             </p>
           </div>
-          <div class="pb-4">
-            <p>
-              My decision-making process involves several key factors when faced
-              with an ethical situation. Firstly, I assess the situation and
-              identify the ethical dilemma at hand. Next, I consider the
-              potential consequences of various courses of action, both in terms
-              of benefits and harm. Factors such as the impact on family members
-              and friends, societal implications, and legal obligations are
-              considered. Furthermore, I evaluate the principles I have been
-              taught by my parents and other aspects of my life relevant to the
-              situation, seeking guidance from established ethical norms.
-              Additionally, I engage in ethical discussions with friends,
-              family, and co-workers, seeking diverse perspectives to inform my
-              decisions. Ultimately, my decision is based on a balance of these
-              considerations, striving to uphold the highest ethical standards.
-            </p>
-          </div>
-          <div class="pb-4">
-            <p>
-              During our ethics in engineering class, we delved into various
-              topics, including environmental responsibility, safety concerns,
-              professional integrity, and conflicts of interest. We gained
-              valuable insight into the ethical dilemmas engineers may encounter
-              in their professional practice by examining real-world case
-              studies.
-            </p>
-          </div>
-          <div class="pb-4">
-            <p>
-              The ethical considerations introduced in the class were both
-              similar and different from my ethics. They were similar in that
-              they emphasized the importance of safety, public welfare, and
-              integrity, aligning with principles within an established code of
-              ethics (While the class focused on the IEEE Code of Ethics, I used
-              my “own” form of code of ethics). However, the class discussions
-              often introduced nuances and complexities specific to engineering
-              practice, challenging me to think critically about applying
-              ethical principles. While my ethics provided a solid foundation,
-              the class discussions enriched my understanding of the ethical
-              dimensions unique to the engineering profession.
-            </p>
-          </div>
-          <div class="pb-4">
-            <p>
-              In our class, reaching a consensus on the "most ethical" decision
-              could be challenging, as ethical dilemmas often involve multiple
-              perspectives and trade-offs. However, the discussions were
-              invaluable in highlighting the importance of ethical deliberation
-              and the need to consider diverse viewpoints. While consensus was
-              only sometimes achieved, the process of ethical discourse was
-              informative and encouraged critical thinking.
-            </p>
-          </div>
-          <div class="pb-4">
-            <p class="pb-2">
-              In the context of the Grimshaw case, three virtues from the
-              "Virtue of Ethics" stand out as particularly relevant:
-            </p>
-            <ol class="list-decimal px-8">
-              <li>
-                <strong>Integrity</strong>: Integrity is essential because it
-                involves being truthful and transparent about product safety
-                issues. In the Grimshaw case, Ford's lack of transparency
-                regarding Pinto’s safety concerns was a significant ethical
-                failing.
-              </li>
-              <li>
-                <strong>Responsibility:</strong> Responsibility is closely tied
-                to ensuring the safety of the products engineer’s design and
-                manufacture. Engineers have a moral obligation to prioritize
-                public safety over profit, which was a key issue in the Grimshaw
-                case.
-              </li>
-              <li>
-                <strong>Honesty:</strong> Honesty is vital in acknowledging and
-                addressing safety issues honestly, both within the organization
-                and with the public. Ford's failure to be honest about Pinto’s
-                safety issues had serious ethical consequences.
-              </li>
-            </ol>
-          </div>
-          <div class="pb-4">
-            <p>
-              In the "Virtue of Ethics," the other virtues are important in
-              different situations, but they are especially relevant to the
-              Grimshaw case because they relate directly to product safety and
-              corporate responsibility. In addition to the ethical virtues
-              mentioned in the "Virtue of Ethics," courage and fairness also
-              apply to this case study. It required courage to stand up for what
-              is just when facing a major corporation, and fairness was crucial
-              in making decisions that didn't overly favor one party while
-              neglecting the rights and interests of others.
-            </p>
-          </div>
-          <div class="pb-4">
-            <p>
-              Engineering professionals navigate a complex landscape of ethical
-              dilemmas. A "Code of Ethics" provides guidance and principles,
-              while personal decision-making processes involve assessing
-              dilemmas, considering consequences, and seeking guidance from
-              established norms. Ethical issues discussed in class enhance our
-              understanding of professional ethics, even as they introduce
-              unique perspectives and complexities. The "Virtue of Ethics"
-              framework offers valuable insights into the virtues that engineers
-              should embody, with integrity, responsibility, and honesty
-              particularly relevant to our case study. Ethical reflection and
-              discourse remain essential for engineers to uphold the highest
-              ethical standards and make responsible decisions that prioritize
-              the well-being of society and the profession.
-            </p>
-          </div>
+          
         </div>
       </div>
     </main>
+
+    <script>
+      function showEssay(id) {
+        // Hide all essay sections
+        document
+          .querySelectorAll(".essay-content")
+          .forEach((el) => el.classList.add("hidden"));
+        // Show the selected essay
+        document.getElementById(id).classList.remove("hidden");
+
+        // Update tab button styles
+        document
+          .querySelectorAll(".tab-button")
+          .forEach((btn) => btn.classList.remove("border-indigo-500"));
+        event.target.classList.add("border-indigo-500");
+      }
+    </script>
   </body>
 </html>
