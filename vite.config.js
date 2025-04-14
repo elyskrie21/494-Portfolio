@@ -12,7 +12,8 @@ export default {
         essay: resolve(__dirname, 'pages/essay.html'),
         works: resolve(__dirname, 'pages/works.html'),
         seniordesign: resolve(__dirname, 'pages/seniordesign.html'),
-        objectives: resolve(__dirname, 'pages/objectives.html')
+        objectives: resolve(__dirname, 'pages/objectives.html'),
+        resume: resolve(__dirname, 'pages/resume.html')
       },
     },
   }
