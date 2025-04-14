@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import { Result } from 'postcss';
 export default {
   //absolute path
-  base: '/394-portfolio/',
+  base: '/494-portfolio/',
   build: {
     rollupOptions: {
       input: {
